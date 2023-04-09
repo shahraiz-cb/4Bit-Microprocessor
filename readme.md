@@ -25,6 +25,19 @@ The Memory Unit consists of a 16x4-bit memory array, which is used to store data
 The microprocessor has a limited instruction set and can only perform simple operations.
 The microprocessor has limited memory capacity and can only handle small programs.
 
+# Exaples:
+
+## Sample Code1:
+
+```
+LDI R0, 0x00
+OUT R0
+INC R0
+JMP 0x00
+```
+
+Inorder to run the code, burn sampleCode1.bin and sampleCode1_1.bin to the "CODEMEM" "CODEMEM_1" EEPROMs in proteus respectively.
+
 # Conclusion:
 
 The 4-bit microprocessor is a low-cost, low-power solution for basic arithmetic and logical operations. Its small size and low power consumption make it ideal for battery-powered devices and other applications that require a compact, energy-efficient solution.
