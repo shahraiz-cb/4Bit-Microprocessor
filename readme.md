@@ -25,9 +25,13 @@ The Memory Unit consists of a 16x4-bit memory array, which is used to store data
 The microprocessor has a limited instruction set and can only perform simple operations.
 The microprocessor has limited memory capacity and can only handle small programs.
 
-# Exaples:
+# Examples:
 
-## Sample Code1:
+For running the bin files provided, make sure to burn "InsDec.bin" and "IncDec_1.bin" files to the "INSDEC" and "INSDEC_1" EEPROMs respectively.
+
+## Sample Code 1:
+
+Loops over the code to increment the contents of R0 and outputs it on the PORT.
 
 ```
 LDI R0, 0x00
@@ -36,7 +40,20 @@ INC R0
 JMP 0x00
 ```
 
-Inorder to run the code, burn sampleCode1.bin and sampleCode1_1.bin to the "CODEMEM" "CODEMEM_1" EEPROMs in proteus respectively.
+In order to run the code, burn sampleCode1.bin and sampleCode1_1.bin to the "CODEMEM" "CODEMEM_1" EEPROMs in proteus respectively.
+
+## Sample Code 2:
+
+```
+LDI R0, 0x05
+LDI R1, 0x05
+OUT R0
+OUT R1
+SUB R0, R1
+OUT R0
+```
+
+Corresponding files for this code are "addTest.bin" and "addTest_1.bin"
 
 # Conclusion:
 
