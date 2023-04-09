@@ -21,16 +21,16 @@ int int2bin(int n)
 int main()
 {
     // read a txt file and save its .bin file
-    map<string, string> word2bin;
-    word2bin["nop"] = "0000";
-    word2bin["ldi"] = "0001";
-    word2bin["add"] = "0010";
-    word2bin["mov"] = "0011";
-    word2bin["jmp"] = "0100";
-    word2bin["brne"] = "0101";
-    word2bin["inc"] = "0110";
-    word2bin["sub"] = "0111";
-    word2bin["out"] = "1000";
+    map<string, int> word2bin;
+    word2bin["nop"] = 0;
+    word2bin["ldi"] = 1;
+    word2bin["add"] = 2;
+    word2bin["mov"] = 3;
+    word2bin["jmp"] = 4;
+    word2bin["brne"] = 5;
+    word2bin["inc"] = 6;
+    word2bin["sub"] = 7;
+    word2bin["out"] = 8;
     string line;
     ifstream myfile("test.txt");
     ofstream outfile("test.bin", ios::binary);
