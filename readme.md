@@ -29,6 +29,8 @@ The microprocessor has limited memory capacity and can only handle small program
 
 For running the bin files provided, make sure to burn "InsDec.bin" and "IncDec_1.bin" files to the "INSDEC" and "INSDEC_1" EEPROMs respectively.
 
+Now you can add you code files to "CODEMEM" and "CODEMEM_1" EEPROMs. Consult the instruction set provided in excel sheet for programming.
+
 ## Sample Code 1:
 
 Loops over the code to increment the contents of R0 and outputs it on the PORT.
